@@ -1,6 +1,11 @@
-# BMI_MANAGEMENT_SYSTEM
-The BMI Management System is a web-based application developed using PHP and MySQL to help users calculate, store, and manage their Body Mass Index (BMI) records. The system allows users to register, log in securely, calculate their BMI using height and weight, and maintain a personal BMI history over time.
+PROJECT NAME=BMI MANAGEMENT SYSTEM NAMES :
+
+C1220443 Abdimajid Abdiaziz Omar
+C1220644 Faysal Ahmed Mohamud
+C1220935 Zakeria Mohamed Abdullahi 4.C1221192 Asad Ali Abdi
 BMI Management System – Project Description
+
+The BMI Management System is a web-based application developed using PHP and MySQL to help users calculate, store, and manage their Body Mass Index (BMI) records. The system allows users to register, log in securely, calculate their BMI using height and weight, and maintain a personal BMI history over time.
 
 The application implements core PHP and MySQL concepts, including database connection, CRUD operations (Create, Read, Update, Delete), user authentication, cookies, and sessions. A secure dashboard (control panel) is provided where authenticated users can manage their BMI records, view health tips based on BMI results, and update their profile information.
 
@@ -25,3 +30,24 @@ Dashboard (control panel) for users
 Automatic session expiration
 
 MySQL database integration
+
+Public Home page (index.php) with header, horizontal navigation, content, footer
+External stylesheet (assets/css/style.css)
+Database connection (config/db.php)
+User registration (register.php): auto ID, first name, last name, sex, username, password, phone, email, profile picture, user type, user status
+Login (login.php): remember me (checkbox), sign up, forgot password
+Dashboard (control panel) with CRUD:
+BMI Records CRUD (dashboard/bmi.php)
+Users CRUD (dashboard/users.php) (admin only)
+Cookies & Sessions used to track user info and control access
+Logout (logout.php) destroys session and cookie
+Automatic session expiry after 5 minutes of inactivity (config/auth.php)
+Setup (XAMPP)
+Copy folder to: C:\xampp\htdocs\bmi_php_mysql
+Start Apache + MySQL
+Import database.sql in phpMyAdmin
+Visit: http://localhost/bmi_php_mysql/index.php
+Default Admin
+username: admin password: admin123
+
+If admin doesn't login, create a new admin account using register.php (select user_type=admin).
